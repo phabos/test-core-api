@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { CatModule } from './cat/cat.module';
 
 @Module({
-  imports: [CatModule],
+  imports: [CatModule.register()],
   controllers: [AppController],
   providers: [AppService],
 })
